@@ -1,0 +1,177 @@
+/* Importando fontes */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #E9C7FF, #FFB5E8);
+    color: #333;
+    line-height: 1.6;
+    animation: fadeIn 2s ease-out;
+  }
+  
+  /* Reset básico */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Cabeçalho */
+  .cabecalho {
+    background-image: url('https://example.com/lego-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  }
+  
+  .cabecalho h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5em;
+    margin-bottom: 10px;
+  }
+  
+  .cabecalho p {
+    font-size: 1.3em;
+  }
+  
+  /* Animação Fade In */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Seções */
+  section {
+    background: white;
+    margin: 40px auto;
+    padding: 40px 30px;
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    opacity: 0.97;
+    transition: transform 0.3s;
+  }
+  
+  section:hover {
+    transform: scale(1.01);
+  }
+  
+  /* Títulos */
+  h2 {
+    color: #E3000B;
+    margin-bottom: 20px;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+  }
+  
+  h2::before {
+    content: "🧱 ";
+    margin-right: 10px;
+  }
+  
+  /* Materiais */
+  .materiais ul {
+    list-style-type: square;
+    padding-left: 20px;
+    font-size: 1.1em;
+  }
+  
+  /* Depoimentos */
+  .card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: linear-gradient(120deg, #ff7f7f, #ffbb33);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    opacity: 0.95;
+    position: relative;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+  }
+  
+  .foto-depoente {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .texto-depoimento {
+    flex: 1;
+  }
+  
+  /* Galeria */
+  .fotos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .fotos img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    transition: transform 0.4s;
+  }
+  
+  .fotos img:hover {
+    transform: scale(1.08);
+  }
+  
+  /* Rodapé */
+  .rodape {
+    background: linear-gradient(135deg, #ff4d4d, #e60000);
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+    box-shadow: 0 -6px 15px rgba(0,0,0,0.3);
+  }
+  
+  /* Efeitos de Hover */
+  .card:hover, .fotos img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsivo */
+  @media (max-width: 600px) {
+    .cabecalho h1 {
+      font-size: 2.5em;
+    }
+  
+    section {
+      padding: 20px 15px;
+    }
+  
+    .fotos img {
+      width: 100%;
+      max-width: 90vw;
+    }
+  
+    h2 {
+      font-size: 22px;
+    }
+  
+    .card {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
