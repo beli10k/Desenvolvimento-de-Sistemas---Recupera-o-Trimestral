@@ -1,126 +1,139 @@
 body {
-  font-family: 'Quicksand', sans-serif;
-  background: url('https://www.transparenttextures.com/patterns/lego.png'), linear-gradient(to right, #edf6f9, #83c5be);
-  color: #333;
-  line-height: 1.6;
-  background-repeat: repeat;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.cabecalho {
-  background: linear-gradient(135deg, #006d77, #83c5be);
-  color: white;
-  text-align: center;
-  padding: 40px 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.cabecalho h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3em;
-  margin-bottom: 10px;
-}
-
-.cabecalho p {
-  font-size: 1.2em;
-}
-
-section {
-  background: white;
-  margin: 40px auto;
-  padding: 40px 30px;
-  width: 90%;
-  max-width: 1000px;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  opacity: 0.97;
-  transition: transform 0.3s ease, opacity 0.5s ease;
-}
-
-section:hover {
-  transform: scale(1.01);
-}
-
-h2 {
-  color: #006d77;
-  margin-bottom: 20px;
-  font-size: 28px;
-  font-family: 'Montserrat', sans-serif;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.card {
-  background: #ffddd2;
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 12px;
-  color: #5e5e5e;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  position: relative;
-  overflow: auto;
-}
-
-.card::before {
-  content: "💬";
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  font-size: 2em;
-}
-
-.materiais ul,
-.ajuda ul {
-  list-style: none;
-  padding-left: 0;
-  font-size: 1.1em;
-}
-
-.ajuda ul li {
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: #333;
-}
-
-.rodape {
-  background: linear-gradient(135deg, #83c5be, #006d77);
-  text-align: center;
-  color: white;
-  padding: 20px;
-  margin-top: 40px;
-  font-size: 14px;
-  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.fade-in {
-  animation: fadeIn ease 2s;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.imagem-ilustrativa {
-  display: block;
-  max-width: 100%;
-  margin: 20px auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.imagem-depoente {
-  width: 100px;
-  border-radius: 50%;
-  float: left;
-  margin-right: 20px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-}
+  .cabecalho {
+   background:
+     linear-gradient(rgba(0, 109, 119, 0.85), rgba(131, 197, 190, 0.85)),
+     url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+   color: white;
+   text-align: center;
+   padding: 60px 20px;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+   border-bottom: 5px solid #ffddd2;
+ }
+ 
+   font-family: 'Quicksand', sans-serif;
+   background: url('https://www.transparenttextures.com/patterns/lego.png'), linear-gradient(to right, #edf6f9, #83c5be);
+   color: #333;
+   line-height: 1.6;
+   background-repeat: repeat;
+ }
+ 
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+ 
+ .cabecalho {
+   background: linear-gradient(135deg, #006d77, #83c5be);
+   color: white;
+   text-align: center;
+   padding: 40px 20px;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+ }
+ 
+ .cabecalho h1 {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 3em;
+   margin-bottom: 10px;
+ }
+ 
+ .cabecalho p {
+   font-size: 1.2em;
+ }
+ 
+ section {
+   background: white;
+   margin: 40px auto;
+   padding: 40px 30px;
+   width: 90%;
+   max-width: 1000px;
+   border-radius: 15px;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+   opacity: 0.97;
+   transition: transform 0.3s ease, opacity 0.5s ease;
+ }
+ 
+ section:hover {
+   transform: scale(1.01);
+ }
+ 
+ h2 {
+   color: #006d77;
+   margin-bottom: 20px;
+   font-size: 28px;
+   font-family: 'Montserrat', sans-serif;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+ }
+ 
+ .card {
+   background: #ffddd2;
+   padding: 20px;
+   margin: 20px 0;
+   border-radius: 12px;
+   color: #5e5e5e;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+   position: relative;
+   overflow: auto;
+ }
+ 
+ .card::before {
+   content: "💬";
+   position: absolute;
+   top: -10px;
+   left: -10px;
+   font-size: 2em;
+ }
+ 
+ .materiais ul,
+ .ajuda ul {
+   list-style: none;
+   padding-left: 0;
+   font-size: 1.1em;
+ }
+ 
+ .ajuda ul li {
+   margin-bottom: 10px;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   color: #333;
+ }
+ 
+ .rodape {
+   background: linear-gradient(135deg, #83c5be, #006d77);
+   text-align: center;
+   color: white;
+   padding: 20px;
+   margin-top: 40px;
+   font-size: 14px;
+   box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .fade-in {
+   animation: fadeIn ease 2s;
+ }
+ 
+ @keyframes fadeIn {
+   from { opacity: 0; transform: translateY(20px); }
+   to { opacity: 1; transform: translateY(0); }
+ }
+ 
+ .imagem-ilustrativa {
+   display: block;
+   max-width: 100%;
+   margin: 20px auto;
+   border-radius: 10px;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .imagem-depoente {
+   width: 100px;
+   border-radius: 50%;
+   float: left;
+   margin-right: 20px;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+   
+ }
+ 
